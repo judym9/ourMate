@@ -1,0 +1,154 @@
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* صورة العين */
+.background-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+/* كرت اللوج ان */
+.login-card {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 450px;
+  padding: 40px;
+  border-radius: 22px;
+  background: rgba(10, 26, 47, 0.55);
+  backdrop-filter: blur(12px);
+  color: #dff6ff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  transform-style: preserve-3d;
+}
+
+.login-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* الوصف */
+.login-subtitle {
+  font-size: 14px;
+  color: #a9d6ff;
+  margin-bottom: 30px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  flex-grow: 1; /* هذا السر */
+}
+
+/* الحقول */
+.login-input {
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: #dff6ff;
+  font-size: 14px;
+  margin-top: 20px; /* نزّل الحقول أكثر للأسفل */
+}
+
+.login-input::placeholder {
+  color: #9fcbff;
+}
+
+/* زر الدخول */
+.login-btn {
+  margin-top: 70px;
+  padding: 16px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #1f6aff, #00e5ff);
+  color: #0a1a2f;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* نص التسجيل */
+.signup-text {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #beeaff;
+  text-align: center;
+}
+
+.signup-text span {
+  color: #00e5ff;
+  cursor: pointer;
+}
+
+.cards-wrapper {
+  position: absolute;
+  left: 300px;
+  top: 90%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+  transition: transform 0.8s ease; /* حركة سلسة للكرتين */
+}
+
+.cards-wrapper.signup-mode {
+  transform: translateY(-50%) translateX(40px) rotateY(180deg); /* Sign Up */
+}
+
+/* محتوى الكرت نفسه */
+.card-content {
+  transform: rotateY(0deg); /* Login */
+  transition: transform 0.6s ease;
+}
+
+.cards-wrapper.signup-mode .card-content {
+  transform: rotateY(180deg); /* Sign Up */
+}
+
+.login-card {
+  transition: all 0.6s ease;
+}
+
+/* لما نكون بحالة signup */
+.cards-wrapper.signup-mode .card-content {
+  transform: rotateY(180deg);
+}
+
+/* تنسيق خاص للـ select */
+.role-select {
+  appearance: none; /* إزالة الشكل الافتراضي */
+  background: rgba(255, 255, 255, 0.08);
+  color: #dff6ff;
+  font-size: 14px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,0 140,0 70,70' fill='%23006aff'/%3E%3C/svg%3E"); /* سهم أزرق */
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-size: 12px;
+}
+
+/* تغيير لون النص داخل الـ options */
+.role-select option {
+  color: #0a1a2f;
+}
+
+/* الخيار placeholder يكون رمادي خفيف */
+.role-select option[value=""] {
+  color: #999999;
+}

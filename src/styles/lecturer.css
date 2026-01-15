@@ -1,0 +1,121 @@
+.lecturer-container {
+  min-height: 100vh;
+  background: #f4f7fb;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Header ===== */
+.welcome-header {
+  position: relative;
+  padding: 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #020b1f, #041a3d, #0a3d6f, #0d6efd);
+  color: white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 102, 255, 0.3);
+}
+
+.welcome-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 80% 40%,
+    rgba(0, 170, 255, 0.25),
+    transparent 60%
+  );
+}
+
+/* نص الهيدر */
+.header-left h1 {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.header-left p {
+  opacity: 0.85;
+  font-size: 15px;
+}
+
+/* يمين الهيدر */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 1;
+}
+
+/* حالة النظام */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.status-badge.running {
+  background: rgba(0, 255, 170, 0.2);
+  color: #00ffb3;
+}
+
+.status-badge.stopped {
+  background: rgba(255, 77, 77, 0.2);
+  color: #ff4d4d;
+}
+
+/* Logout */
+.logout-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 7px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== Buttons ===== */
+.control-buttons {
+  margin: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.control-btn {
+  padding: 15px;
+  border-radius: 14px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.control-btn.start {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+}
+
+.control-btn.stop {
+  background: linear-gradient(135deg, #ff4d4d, #c40000);
+  color: white;
+}
+
+/* أزرار بنفس لون الهيدر */
+.control-btn.header-theme {
+  background: linear-gradient(135deg, #020b1f, #041a3d, #0a3d6f, #0d6efd);
+  color: white;
+  border: none;
+}
+
+.control-btn:hover {
+  box-shadow: 0 8px 25px rgba(0, 102, 255, 0.4);
+  transform: translateY(-2px);
+}
