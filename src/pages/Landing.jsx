@@ -6,7 +6,6 @@ const Landing = () => {
 
   return (
     <div className="landing-container">
-
       <img
         src={process.env.PUBLIC_URL + "/images/robot-eye.png"}
         className="background-image"
@@ -14,23 +13,18 @@ const Landing = () => {
       />
 
       <div className="welcome-card">
-
         <h1 className="system-title">FocusMate</h1>
         <p className="system-subtitle">
           Smart Classroom Attention Monitoring System
         </p>
 
-        <button
-          className="start-btn"
-          onClick={() => navigate("/auth")}
-        >
+        <button className="start-btn" onClick={() => navigate("/auth")}>
           Get Started
         </button>
 
         <div className="footer-text">
           AI-Powered platform for monitoring student attention during lectures.
         </div>
-
       </div>
     </div>
   );

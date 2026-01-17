@@ -19,24 +19,22 @@ ChartJS.register(
   PointElement,
   ArcElement,
   Tooltip,
-  Legend
+  Legend,
 );
 
-
-
 export default function ChartCard({ title }) {
- const data = {
-  labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
-  datasets: [
-    {
-      label: "Average Attention",
-      data: [72, 75, 70, 78],
-      borderColor: "#F1D27A",
-      backgroundColor: "rgba(212,175,55,0.2)",
-      tension: 0.4,
-    },
-  ],
-};
+  const data = {
+    labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
+    datasets: [
+      {
+        label: "Average Attention",
+        data: [72, 75, 70, 78],
+        borderColor: "#7a88f1ff",
+        backgroundColor: "rgba(244, 244, 246, 1)",
+        tension: 0.4,
+      },
+    ],
+  };
 
   const options = {
     responsive: true,
@@ -66,4 +64,3 @@ export default function ChartCard({ title }) {
     </div>
   );
 }
-

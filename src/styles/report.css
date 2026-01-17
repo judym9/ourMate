@@ -19,7 +19,7 @@
 
 /* Card */
 .report-card {
-  background: white;
+  background: rgb(85, 76, 76);
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);

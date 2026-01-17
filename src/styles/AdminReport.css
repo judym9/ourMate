@@ -1,0 +1,30 @@
+.report-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.report-header select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(77, 163, 255, 0.08);
+  color: #00e5ff;
+  font-size: 14px;
+}
+.chart-card {
+  background: rgba(77, 163, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  color: #00e5ff;
+}
+.card h3 {
+  font-size: 20px;
+  color: #beeaff;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 20px;
+  font-weight: 700;
+}

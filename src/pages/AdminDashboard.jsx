@@ -3,7 +3,6 @@ import Topbar from "../components/Topbar";
 import StatCard from "../components/StatCard";
 import ChartCard from "../components/ChartCard";
 import "../styles/dashboard.css";
-
 export default function AdminDashboard() {
   return (
     <div className="dashboard">

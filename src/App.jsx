@@ -4,6 +4,7 @@ import Auth from "./pages/Auth";
 import Lecturer from "./pages/Lecturer";
 import AdminDashboard from "./pages/AdminDashboard"; // صفحة الادمن
 import Report from "./pages/Report";
+import AdminReport from "./pages/AdminReport";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/lecturer" element={<Lecturer />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/lecture-report" element={<Report />} />
+        <Route path="/report" element={<AdminReport />} />
       </Routes>
     </BrowserRouter>
   );
