@@ -1,26 +1,22 @@
-/* ========== Global ========== */
+/*  Global  */
 body {
   margin: 0;
-  background: linear-gradient(
-    135deg,
-    #0a1a2f,
-    #4b3f72
-  ); /* أزرق داكن + بنفسجي هادئ */
+  background: linear-gradient(135deg, #0a1a2f, #4b3f72);
   color: #e0eaf6;
   font-family: "Segoe UI", sans-serif;
 }
 
-/* ========== Layout ========== */
+/*  Layout  */
 .dashboard {
   display: flex;
   height: 100vh;
   overflow: hidden;
 }
 
-/* ========== Sidebar ========== */
+/*  Sidebar  */
 .sidebar {
   width: 230px;
-  background: rgba(10, 26, 47, 0.85); /* أزرق داكن شفاف */
+  background: rgba(10, 26, 47, 0.85);
   padding: 25px 20px;
   border-right: 1px solid rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(8px);
@@ -29,7 +25,7 @@ body {
 .logo {
   font-size: 22px;
   font-weight: bold;
-  color: #cfa0ff; /* بنفسجي فاتح */
+  color: #cfa0ff;
   margin-bottom: 40px;
 }
 
@@ -43,34 +39,30 @@ body {
   padding: 14px 16px;
   margin-bottom: 8px;
   border-radius: 10px;
-  color: #b0a5ff; /* أزرق-بنفسجي هادئ */
+  color: #b0a5ff;
   cursor: pointer;
   transition: all 0.25s ease;
 }
 
 .sidebar li:hover {
-  background: rgba(65, 73, 233, 0.5); /* هالة بنفسجية فاتحة عند hover */
+  background: rgba(65, 73, 233, 0.5);
   color: #ffffff;
 }
 
 .sidebar li.active {
-  background: linear-gradient(
-    135deg,
-    #7fb3d5,
-    #9b59b6
-  ); /* تدرج أزرق → بنفسجي */
+  background: linear-gradient(135deg, #7fb3d5, #9b59b6);
   color: white;
   font-weight: 500;
 }
 
-/* ========== Main Content ========== */
+/*  Main Content  */
 .main {
   flex: 1;
   padding: 25px 30px;
   overflow-y: auto;
 }
 
-/* ========== Topbar ========== */
+/*  Topbar  */
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -84,7 +76,7 @@ body {
   color: #e0eaf6;
 }
 
-/* ========== Cards ========== */
+/*  Cards  */
 .cards {
   display: flex;
   gap: 20px;
@@ -92,7 +84,7 @@ body {
 }
 
 .card {
-  background: rgba(224, 234, 246, 0.06); /* شفافية خفيفة */
+  background: rgba(224, 234, 246, 0.06);
   padding: 22px;
   border-radius: 16px;
   backdrop-filter: blur(10px);
@@ -101,17 +93,16 @@ body {
     transform 0.2s ease,
     box-shadow 0.2s ease;
 }
-
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(155, 89, 182, 0.25); /* ظل بنفسجي-أزرق ناعم */
+  box-shadow: 0 6px 18px rgba(155, 89, 182, 0.25);
 }
 
 /* Stat Card */
 .stat-card h2 {
   margin: 0;
   font-size: 28px;
-  color: #9b59b6; /* بنفسجي */
+  color: #9b59b6;
 }
 
 .stat-card p {
@@ -120,7 +111,7 @@ body {
   font-size: 14px;
 }
 
-/* ========== Charts ========== */
+/*  Charts  */
 .charts {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -132,8 +123,8 @@ body {
   height: 200px;
   margin-top: 15px;
   border-radius: 12px;
-  background: rgba(191, 144, 255, 0.08); /* خلفية بنفسجية فاتحة شفاف */
-  border: 1px dashed rgba(127, 179, 213, 0.3); /* أزرق فاتح */
+  background: rgba(191, 144, 255, 0.08);
+  border: 1px dashed rgba(127, 179, 213, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
