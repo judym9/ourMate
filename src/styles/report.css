@@ -1,13 +1,14 @@
 .report-container {
   padding: 40px;
-  background: #f4f7fb;
   min-height: 100vh;
+  background: linear-gradient(135deg, #0a1a2f, #4b3f72);
+  color: #e0eaf6;
 }
 
 .report-title {
   font-size: 32px;
   margin-bottom: 30px;
-  color: #041a3d;
+  color: #e0eaf6;
 }
 
 /* Grid */
@@ -19,25 +20,40 @@
 
 /* Card */
 .report-card {
-  background: rgb(85, 76, 76);
+  background: rgba(224, 234, 246, 0.06);
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(224, 234, 246, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
+.report-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(155, 89, 182, 0.25);
+}
+
+/* Highlight Card */
 .report-card.highlight {
-  background: linear-gradient(135deg, #020b1f, #041a3d, #0a3d6f, #0d6efd);
+  background: linear-gradient(135deg, #7fb3d5, #9b59b6);
   color: white;
+  border: none;
 }
 
+/* Text */
 .report-label {
   display: block;
   font-size: 14px;
   opacity: 0.75;
   margin-bottom: 8px;
+  color: #b0a5ff;
 }
 
 .report-value {
   font-size: 22px;
   font-weight: bold;
+  color: #ffffff;
 }
